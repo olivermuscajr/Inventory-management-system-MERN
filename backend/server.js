@@ -47,9 +47,9 @@ app.get('/api/health', (req, res) => {
 // Import routes
 const productRoutes = require('./routes/ProductRoutes');  // <-- Example fix for capital 'P'
 const categoryRoutes = require('./routes/categoryRoutes'); // <-- Apply to all
-const activityLogRoutes = require('./routes/ActivityLogRoutes');
-const authRoutes = require('./routes/AuthRoutes');
-const reportRoutes = require('./routes/ReportRoutes');
+const activityLogRoutes = require('./routes/activityLogRoutes');
+const authRoutes = require('./routes/authRoutes');
+const reportRoutes = require('./routes/reportRoutes');
 
 // Use routes
 app.use('/api/products', productRoutes);
