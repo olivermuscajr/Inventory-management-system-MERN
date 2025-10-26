@@ -45,11 +45,11 @@ app.get('/api/health', (req, res) => {
 });
 
 // Import routes
-const productRoutes = require('./routes/ProductRoutes');  // <-- Example fix for capital 'P'
-const categoryRoutes = require('./routes/categoryRoutes'); // <-- Apply to all
-const activityLogRoutes = require('./routes/activityLogRoutes');
-const authRoutes = require('./routes/authRoutes');
-const reportRoutes = require('./routes/reportRoutes');
+const productRoutes = require('./routes/ProductRoutes');   // Matches 'ProductRoutes.js'
+const categoryRoutes = require('./routes/CategoryRoutes'); // FIX: Matches 'CategoryRoutes.js'
+const activityLogRoutes = require('./routes/ActivityLogRoutes'); // FIX: Matches 'ActivityLogRoutes.js'
+const authRoutes = require('./routes/AuthRoutes');         // FIX: Matches 'AuthRoutes.js'
+const reportRoutes = require('./routes/ReportRoutes');
 
 // Use routes
 app.use('/api/products', productRoutes);
